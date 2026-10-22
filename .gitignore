@@ -1,0 +1,15 @@
+# data
+**/bronze/
+**.xls
+
+# virtual environment
+.venv/
+
+**/__pycache__/
+__pycache__
+***.pyc
+
+# extras
+test.py
+notes.md
+kamis_test.yaml

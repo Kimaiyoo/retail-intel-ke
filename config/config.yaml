@@ -1,0 +1,40 @@
+
+kamis:
+  base_url: "https://kamis.kilimo.go.ke/site/market_search/market_search"
+
+  # Historical backfill range; both dates are inclusive.
+  start_date: "2025-10-20"
+  end_date: "2026-10-19"
+
+  per_page: 5000
+
+  ca_bundle: "certs/emsign_root_ca_g1.pem"
+  verify_ssl: true
+
+  timeout_seconds: 60
+  max_retries: 4
+  backoff_seconds: 2
+  sleep_between_requests: 1
+
+  bronze_dir: "data/bronze/kamis"
+
+  commodities:
+    1: "Dry Maize"
+    3: "Wheat"
+    4: "Rice"
+    249: "Maize Flour"
+    265: "Wheat Flour"
+    64: "Beans Rosecoco"
+    10: "Green Grams"
+    57: "Red Irish Potato"
+    58: "Cabbages"
+    61: "Tomatoes"
+    154: "Kales/Sukuma Wiki"
+    158: "Dry Onions"
+    73: "Meat Beef"
+    72: "Eggs"
+    133: "Cow Milk (collection point)"
+
+knbs:
+  data_url: "https://opendata.knbs.or.ke/beta/databrowserhub/api/Core/nodes/1/datasets/KE1,DF_CPI_IX,1.0/data"
+  bronze_dir: "data/bronze/knbs"
