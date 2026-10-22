@@ -142,17 +142,12 @@ def save_bronze(cfg, raw, ingest_ts):
 def _ordered_codes(index):
     """Category codes in position order (JSON-stat allows list or dict)."""
     if isinstance(index, dict):
-        return sorted(index, key=index.get)
+        return sorted(index, key=index.get) #type:ignore
 
     return list(index)
 
-
 def jsonstat_to_df(js):
     """Flatten a JSON-stat dataset into one row per observation.
-
-    ``value`` is a sparse dict: the key is the cell position in the
-    row-major grid described by ``size``, so absent keys are missing
-    observations.
     """
     ids, sizes = js["id"], js["size"]
 
