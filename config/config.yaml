@@ -38,3 +38,4 @@ kamis:
 knbs:
   data_url: "https://opendata.knbs.or.ke/beta/databrowserhub/api/Core/nodes/1/datasets/KE1,DF_CPI_IX,1.0/data"
   bronze_dir: "data/bronze/knbs"
+  item_price_code: "CP01"
