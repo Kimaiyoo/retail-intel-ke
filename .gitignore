@@ -1,6 +1,7 @@
 # data
 **/bronze/
 **.xls
+data/
 
 # virtual environment
 .venv/

@@ -39,3 +39,11 @@ knbs:
   data_url: "https://opendata.knbs.or.ke/beta/databrowserhub/api/Core/nodes/1/datasets/KE1,DF_CPI_IX,1.0/data"
   bronze_dir: "data/bronze/knbs"
   item_price_code: "CP01"
+
+spark:
+  app_name: "retail_intel_ke"
+  master: "local[*]"
+  shuffle_partitions: 8
+  kamis_bronze_dir: "data/bronze/kamis"
+  kamis_silver_dir: "data/silver/kamis_prices"
+  kamis_quarantine_dir: "data/quarantine/kamis"
